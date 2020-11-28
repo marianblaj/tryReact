@@ -72,8 +72,6 @@ class App extends Component {
           <div style={heading}>
             <UserOutput userName={this.state.name} />
             <ValidationComponent nameLength={this.state.nameLength} />
-            <p>Lungime nume introdus:</p>
-            <p>{this.state.nameLength}</p>
           </div>
           <button className="btn btn-primary" onClick={this.buttonPresset}>
             reset
@@ -84,6 +82,7 @@ class App extends Component {
               index={index}
               letter={litera}
               handleRemove={this.handleRemove.bind(this)}
+              style={{ Color: "red!important;" }}
             />
           ))}
         </div>

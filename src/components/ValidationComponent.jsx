@@ -16,8 +16,7 @@ const ValidationComponent = (props) => {
             return (<p>Text too short!</p>);
         }       
       })()}
-        <p>{props.nameLength}</p>
-       
+            
       </React.Fragment>
     );
   }
